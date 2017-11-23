@@ -1,0 +1,158 @@
+------------------------------------
+XSA
+------------------------------------
+10.31.135.218
+https://www.sap.com/developer/tutorials/hxe-ua-installing-vm-image.html
+hxeadm
+OS BKI027737
+DB BKi027737
+
+xs login -u xsa_admin -p YOUR_PASSWORD_HERE -a https://hxehost:39030 --skip-ssl-validation
+run: xs apps
+
+logon to WEBIDE use XSA_DEV 
+---
+NPM
+---
+
+npm config set proxy http://proxy:8083
+npm config set https-proxy https://proxy:8083
+
+npm config delete http-proxy
+npm config delete https-proxy
+
+npm install --save    to update package.json
+
+
+nodemon launch.js
+
+#The command to reset proxy for npm 
+npm config rm proxy
+npm config rm https-proxy
+
+
+# reset proxy for git
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+
+# get proxy setting for git
+git config --global --list
+npm config get list
+npm config get proxy
+npm config get https-proxy
+
+git config --global http.proxy http://proxy:8083
+git config --global --unset http.proxy
+
+
+-----
+DEBUG
+-----
+
+node --debug server.js
+node-inspector --web-port=3000
+
+
+needs to use port 8080
+
+------------
+GIT & HEROKU
+------------
+
+git init
+git add .
+git commit -m "Message"
+
+heroku create 
+git push heroku master
+
+heroku ps:scale web=1
+
+heroku open
+
+
+heroku config:set TIMES=2    to set process env vars process.env.TIMES
+
+
+------------
+PROXY WORK
+------------
+
+set http_proxy=http://proxy:8080
+set https_proxy=http://proxy:8080
+
+set http_proxy=
+set https_proxy=
+
+------------
+GIT & HEROKU
+------------
+
+npm install -g grunt-cli
+grunt init:dev
+grunt init:prod
+
+grunt server
+
+
+------------
+GITHUB
+------------
+
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/briani99/server.git
+git push -u origin master
+
+------------
+AURELIA
+------------
+Installing:
+npm install
+npm install -g gulp
+npm install -g jspm
+jspm install -y
+
+Running:
+gulp watch
+
+------------------------------------
+DEBUGGING NODE
+------------------------------------
+
+1. Start Node Inspector 
+
+$ node-inspector
+Node Inspector v0.7.3
+Visit http://127.0.0.1:8080/debug?port=5858 to start debugging.
+
+2. Run the App in Debug Mode
+$ node --debug app.js 
+debugger listening on port 5858
+
+3. Open chrome on http://127.0.0.1:8080/debug?port=5858
+
+4. Open the app http://localhost:8080/debug?port=5858
+
+
+------------------------------------
+NODEJS SERVER PROJECT FROM SCRATCH
+------------------------------------
+
+cd server
+npm init                            					(To create a new project)
+npm install express --save						(To Install Express and add to package.json)		
+npm install express body-parser morgan mongoose jsonwebtoken --save	
+
+npm install -g nodemon
+npm install -g node-inspector
+
+npm install passport --save
+npm install passport-local --save
+npm install passport-facebook --save
+npm install passport-jwt --save
+
+npm install dotenv --save
+
+

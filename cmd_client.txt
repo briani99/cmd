@@ -1,0 +1,54 @@
+-----------------
+STARTING AURELIA
+-----------------
+
+npm install -g aurelia-cli
+au new  (New Project Wizard)
+npm install
+au run
+
+au run --watch  (this runs your project and watchs for changes)
+au run --env stage --watch  (use --env for dev,stage,prod)
+
+au build --env stage
+
+au test
+au test -watch
+
+au v
+au help
+
+------------
+JSPM 
+------------
+
+npm install -g jspm
+
+git clone https://github.com/aurelia/skeleton-navigation.git
+cd skeleton-esnext
+npm install -y          (No prompts)
+
+
+gulp watch
+
+------------
+TESTING
+------------
+Unit:
+npm install -g karma-cli
+glup test
+
+E2E:  these use protractor
+
+gulp webdriver=update
+
+To Execute Test run both :  
+gulp watch
+gulp e2e
+
+
+
+------------
+JSPM 
+------------
+

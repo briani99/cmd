@@ -57,12 +57,11 @@ JSPM
 SKELETON APP
 ------------
 
-I had to make some changes in config.js and packaage.json, like
-"text": "github:systemjs/plugin-text@0.0.8" to "text": "npm:systemjs/plugin-text@0.0.8",
-
 npm install
 npm install -g gulp
 npm install -g jspm
 jspm install -y
 gulp watch
 
+--This is important to allow jspm to pull form github 
+jspm config register github

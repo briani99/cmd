@@ -65,3 +65,8 @@ gulp watch
 
 --This is important to allow jspm to pull form github 
 jspm config register github
+
+documentation said: 
+"jspm install aurelia-i18n"  failed --> "jspm i npm:aurelia-i18n" worked 
+
+jspm update --->  this updates the config.js file

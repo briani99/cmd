@@ -70,3 +70,6 @@ documentation said:
 "jspm install aurelia-i18n"  failed --> "jspm i npm:aurelia-i18n" worked 
 
 jspm update --->  this updates the config.js file
+
+
+git config --global user.email

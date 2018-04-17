@@ -156,4 +156,12 @@ npm install passport-jwt --save
 npm install dotenv --save
 npm install helmet --save
 
+------------------------------------
+CLOUD FOUNDRY
+------------------------------------
 
+cf login
+cf marketplace
+cf deploy shine-cf.mtar
+cf undeploy com.sap.refapps.shine -f –delete-services
+cf apps

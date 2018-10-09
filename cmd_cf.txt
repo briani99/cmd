@@ -1,0 +1,8 @@
+cf push				//push
+cf apps				//show all apps
+cf logs myapp --recent		//Show recent console.log messages
+cf logs myapp | grep -v RTR    	//Stream the console.log to the terminal
+
+
+
+
